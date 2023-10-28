@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Thank you for avaliable</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body onload="atualizou()">
+    <main class="center-message">
+        <div class="menssage">
+
+            <div><img class="thank-img" src="./images/illustration-thank-you.svg" alt="Um celular"></div>
+
+            <p class="text-info"><span class="selected-nb" id="rating-message"></span></p>
+
+            <h2>Thank you!</h2>
+
+            <p class="text-thank-you">We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const rating = urlParams.get('rating');
+        const ratingMessage = document.getElementById('rating-message');
+        if (rating) {
+            ratingMessage.textContent = `You selected ${rating} out of 5`;
+        }
+    </script>
+</body>
+
+</html>

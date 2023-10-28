@@ -1,0 +1,65 @@
+@media screen and (min-width: 200px) and (max-width:400px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+    :root {
+
+        --one-orange: hsl(25, 97%, 53%);
+        --second-White: #ffffff;
+        --three-Light-Grey: #959eac;
+        --four-Medium-Grey: hsla(216, 12%, 54%, 0.096);
+        --five-Dark-Blue: hsl(213, 19%, 18%);
+        --six-Very-Dark-Blue: hsl(216, 12%, 8%);
+    }
+
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    }
+
+    .content, .end-page {
+        display: flex;
+        flex-direction: column;
+        min-width: 190px;
+        max-width: 390px; 
+        width: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    button.star {
+        width: auto;
+        height: auto;
+        min-width: 25px;
+        min-height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 25px;
+    }
+
+    .btn-submit {
+        width: auto;
+    }
+
+    .menssage {
+        display: flex;
+        flex-direction: column;
+        min-width: 190px;
+        max-width: 390px; 
+        width: auto;
+    }
+
+}
